@@ -1,0 +1,18 @@
+﻿1. 
+create a class name of EmailSender. It had void method name of SendBulkEmail which take 
+campaignId(integer), emailAddress(List of string) , hyperlinkGenerator(a delegate or func).
+
+SendBulkEmail description: one StringBuilder which change in html the link with the help of 
+hyperlinkGenerator delegate. Finally print the StringBuilder like in the following:
+<html><head></head><body><a href='https://mypage.com/campaign/track?c=1&e=faisal.exe@gmail.com'></body></html>
+<html><head></head><body><a href='https://mypage.com/campaign/track?c=1&e=salman.exe@gmail.com'></body></html>
+
+2. 
+In program.cs :
+GenerateLink method which take to parameters campaignId, email which int,string respectively
+and return a string "https://mypage.com/campaign/track?c={campaignId}&e={email}"
+
+
+Task : You have to send a bulk email to all email address of user ? 
+
+
